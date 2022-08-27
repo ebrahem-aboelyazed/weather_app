@@ -26,14 +26,6 @@ class BottomNav extends StatelessWidget {
               label: 'Weather',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.account_balance_outlined),
-              label: 'Learn',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.motion_photos_on_sharp),
-              label: 'Downloads',
-            ),
-            BottomNavigationBarItem(
               icon: Icon(Icons.person_rounded),
               label: 'Profile',
             ),

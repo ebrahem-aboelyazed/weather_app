@@ -42,32 +42,6 @@ class FavoritesLoading extends StatelessWidget {
   }
 }
 
-class ShimmerGridLoading extends StatelessWidget {
-  const ShimmerGridLoading({required this.child, super.key});
-
-  final Widget child;
-
-  @override
-  Widget build(BuildContext context) {
-    return Shimmer.fromColors(
-      baseColor: Colors.grey[300]!,
-      highlightColor: Colors.grey[100]!,
-      child: GridView.builder(
-        itemBuilder: (_, __) => Padding(
-          padding: const EdgeInsets.only(bottom: Dimensions.paddingSmall),
-          child: child,
-        ),
-        itemCount: 10,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2,
-          crossAxisSpacing: 5,
-          mainAxisSpacing: 5,
-        ),
-      ),
-    );
-  }
-}
-
 class ShimmerListLoading extends StatelessWidget {
   const ShimmerListLoading({required this.child, super.key});
 
@@ -83,7 +57,7 @@ class ShimmerListLoading extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: Dimensions.paddingSmall),
           child: child,
         ),
-        itemCount: 10,
+        itemCount: 4,
       ),
     );
   }

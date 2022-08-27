@@ -6,12 +6,16 @@ class CachedImage extends StatelessWidget {
     this.imageUrl, {
     this.radius = 0,
     this.fit = BoxFit.cover,
+    this.height,
+    this.width,
     super.key,
   });
 
   final String imageUrl;
   final double radius;
   final BoxFit fit;
+  final double? height;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +24,8 @@ class CachedImage extends StatelessWidget {
       child: CachedNetworkImage(
         imageUrl: imageUrl,
         fit: fit,
+        height: height,
+        width: width,
       ),
     );
   }

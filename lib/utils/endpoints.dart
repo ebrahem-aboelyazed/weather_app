@@ -1,20 +1,7 @@
 class Endpoints {
   Endpoints._();
 
-  //App API Base Url
-  static const String baseUrl = 'https://conceptive.tech/api/';
-
-  // User
-  static const String login = 'login/';
-  static const String register = 'register/student/';
-  static const String refresh = '${login}refresh/';
-  static const String users = 'users/';
-  static const String userInfo = '${users}me';
-
-  // Courses
-  static const String courses = 'courses/';
-  static const String curriculum = 'curriculum/';
-  static const String content = 'content/';
-  static const String sections = 'sections/';
-  static const String enroll = 'enroll/';
+  static const String baseUrl = 'https://api.openweathermap.org/data/2.5/';
+  static const String weather = 'weather';
+  static const String forecast = 'forecast';
 }

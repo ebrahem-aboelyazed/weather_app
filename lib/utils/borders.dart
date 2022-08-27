@@ -6,3 +6,14 @@ const OutlineInputBorder defaultBorder = OutlineInputBorder(
     Radius.circular(Dimensions.radiusLarge),
   ),
 );
+
+
+const OutlineInputBorder searchBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.all(
+    Radius.circular(30),
+  ),
+  borderSide: BorderSide(
+    color: Colors.transparent,
+    style: BorderStyle.none,
+  ),
+);
